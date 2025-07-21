@@ -1,0 +1,152 @@
+/* =========================
+   Iconic Residency – Main Stylesheet
+   Derived from sample UI and UI guide
+   ========================= */
+
+:root {
+  --bg-light: #FAF9F6;
+  --accent-navy: #2C3E50;
+  --accent-olive: #7B9E63;
+  --highlight-gold: #EAD7A1;
+  --accent-clay: #C97B63;
+  --text-primary: #333333;
+  --text-muted: #7D7D7D;
+  --card-bg: #FFFDF9;
+
+  --font-sans: 'Open Sans', sans-serif;
+  --font-display: 'Poppins', sans-serif;
+  --font-button: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-light);
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: var(--font-display);
+  margin: 64px 0 24px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  margin-bottom: 12px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 48px 24px;
+}
+
+.btn {
+  background: var(--accent-navy);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-family: var(--font-button);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  filter: brightness(110%);
+  transform: scale(1.02);
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(44, 62, 80, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(44, 62, 80, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 48px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 32px;
+}
+
+table, th, td {
+  border: 1px solid var(--accent-clay);
+  padding: 12px;
+}
+
+th {
+  background: #FFFDF4;
+  color: var(--accent-navy);
+  font-weight: 600;
+}
+
+blockquote {
+  font-style: italic;
+  padding: 16px;
+  border-left: 4px solid var(--accent-olive);
+  background: #FFFDF4;
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+section {
+  margin-bottom: 96px;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 42px; }
+  h2 { font-size: 28px; }
+  .btn { padding: 12px 24px; }
+  .container { padding: 24px; }
+}
