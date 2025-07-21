@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +11,47 @@
 </head>
 <body>
   <main class="container">
+<header class="site-header">
+  <div class="container header-container">
+    <div class="logo">
+      <img src="/assets/logo-iconic.png" alt="Iconic Residency - Ghaziabad Plots" />
+    </div>
+    <nav class="main-nav">
+      <a href="#home" title="Home">Home</a>
+      <a href="#about" title="About the Project">About</a>
+      <a href="#location" title="Location Advantage">Location</a>
+      <a href="#layout" title="Master Plan & Layout">Layout</a>
+      <a href="#pricing" title="Pricing & Payment Plans">Pricing</a>
+      <a href="#gallery" title="Gallery">Gallery</a>
+      <a href="#legal" title="Legal Approvals">Legal</a>
+      <a href="#why-invest" title="Why Invest Here">Why Invest</a>
+      <a href="#faqs" title="FAQs">FAQs</a>
+      <a href="#contact" title="Contact & Enquiry">Contact</a>
+    </nav>
+    <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn">
+      <img src="/assets/whatsapp.svg" alt="WhatsApp Icon" />
+      Enquire Now
+    </a>
+    <button class="hamburger" aria-label="Open menu">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#location">Location</a>
+    <a href="#layout">Layout</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#legal">Legal</a>
+    <a href="#why-invest">Why Invest</a>
+    <a href="#faqs">FAQs</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn">WhatsApp</a>
+  </div>
+</header>
     <!-- Hero Section -->
     <section class="hero" style="position: relative; background: url('/assets/hero-banner.jpg') center/cover no-repeat; min-height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center;">
       <div style="background: linear-gradient(to bottom, rgba(250,249,246,0) 0%, rgba(201,123,99,0.6) 100%); padding: 40px; border-radius: 16px;">
@@ -122,4 +165,53 @@
       <a href="#contact" class="btn">Schedule My Visit</a>
     </section>
   </main>
+<footer class="site-footer">
+  <div class="footer-columns">
+    <div class="footer-col about">
+      <h4>About the Project</h4>
+      <p>Iconic Residency offers government-approved plots near Wave City, NH-24, Ghaziabad. Fully legal and registry-ready.</p>
+    </div>
+
+    <div class="footer-col links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#pricing">Pricing & Payment</a></li>
+        <li><a href="#layout">Master Plan</a></li>
+        <li><a href="#location">Location Advantage</a></li>
+        <li><a href="#contact">Contact & Enquiry</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col contact">
+      <h4>Contact Info</h4>
+      <p><img src="/assets/map-pin.svg" alt="Location Icon" /> Near Wave City, NH-24, Ghaziabad, UP</p>
+      <p><img src="/assets/phone.svg" alt="Phone Icon" /> <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a></p>
+      <p><img src="/assets/mail.svg" alt="Email Icon" /> <a href="mailto:contact@iconicresidency.in">contact@iconicresidency.in</a></p>
+      <p><img src="/assets/whatsapp.svg" alt="WhatsApp Icon" /> <a href="https://wa.me/91XXXXXXXXXX">Chat on WhatsApp</a></p>
+    </div>
+
+    <div class="footer-col cta">
+      <h4>Ready to visit your future home site?</h4>
+      <a href="#" class="cta-btn">Schedule My Site Visit</a>
+      <div class="social-icons">
+        <a href="#"><img src="/assets/whatsapp.svg" alt="WhatsApp" /></a>
+        <a href="#"><img src="/assets/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="/assets/facebook.svg" alt="Facebook" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Iconic Residency. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.querySelector(".hamburger").addEventListener("click", function() {
+  document.querySelector(".mobile-menu").classList.toggle("active");
+});
+</script>
 </body>
+</html>
