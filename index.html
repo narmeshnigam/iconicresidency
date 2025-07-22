@@ -28,9 +28,8 @@
       <a href="/faqs.html" title="FAQs">FAQs</a>
       <a href="/contact.html" title="Contact & Enquiry">Contact</a>
     </nav>
-    <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn">
-      <img src="/assets/whatsapp.svg" alt="WhatsApp Icon" />
-      Enquire Now
+    <a href="https://wa.me/918285051240" class="cta-btn icon-only" aria-label="Chat on WhatsApp">
+      <img src="/assets/whatsapp.svg" alt="WhatsApp" />
     </a>
     <button class="hamburger" aria-label="Open menu">
       ☰
@@ -49,7 +48,7 @@
     <a href="/why-invest.html">Why Invest</a>
     <a href="/faqs.html">FAQs</a>
     <a href="/contact.html">Contact</a>
-    <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn">WhatsApp</a>
+    <a href="https://wa.me/918285051240" class="cta-btn">WhatsApp</a>
   </div>
 </header>
     <!-- Hero Section -->
@@ -186,10 +185,10 @@
 
     <div class="footer-col contact">
       <h4>Contact Info</h4>
-      <p><img src="/assets/map-pin.svg" alt="Location Icon" /> Near Wave City, NH-24, Ghaziabad, UP</p>
-      <p><img src="/assets/phone.svg" alt="Phone Icon" /> <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a></p>
-      <p><img src="/assets/mail.svg" alt="Email Icon" /> <a href="mailto:contact@iconicresidency.in">contact@iconicresidency.in</a></p>
-      <p><img src="/assets/whatsapp.svg" alt="WhatsApp Icon" /> <a href="https://wa.me/91XXXXXXXXXX">Chat on WhatsApp</a></p>
+      <p><img src="/assets/map-pin.svg" alt="Location Icon" /> Behind Midpoint Complex, NH-24, Near Wave City, Ghaziabad, UP - 201002</p>
+      <p><img src="/assets/phone.svg" alt="Phone Icon" /> <a href="tel:+918285051240">+918285051240</a></p>
+      <p><img src="/assets/mail.svg" alt="Email Icon" /> <a href="mailto:info@hirnoticonicresidency.com">info@hirnoticonicresidency.com</a></p>
+      <p><img src="/assets/whatsapp.svg" alt="WhatsApp Icon" /> <a href="https://wa.me/918285051240">Chat on WhatsApp</a></p>
     </div>
 
     <div class="footer-col cta">
@@ -212,6 +211,14 @@
 document.querySelector(".hamburger").addEventListener("click", function() {
   document.querySelector(".mobile-menu").classList.toggle("active");
 });
+document.querySelectorAll(".mobile-menu a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.querySelector(".mobile-menu").classList.remove("active");
+  });
+});
 </script>
+<a href="https://wa.me/918285051240?text=Hi, I'm interested in buying a plot here." target="_blank" aria-label="Chat on WhatsApp" class="whatsapp-float">
+  <img src="/assets/whatsapp.svg" alt="WhatsApp" />
+</a>
 </body>
 </html>
