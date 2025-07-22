@@ -15,9 +15,8 @@
       <a href="/faqs.html" title="FAQs">FAQs</a>
       <a href="/contact.html" title="Contact & Enquiry">Contact</a>
     </nav>
-    <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn">
-      <img src="/assets/whatsapp.svg" alt="WhatsApp Icon" />
-      Enquire Now
+    <a href="https://wa.me/918285051240" class="cta-btn icon-only" aria-label="Chat on WhatsApp">
+      <img src="/assets/whatsapp.svg" alt="WhatsApp" />
     </a>
     <button class="hamburger" aria-label="Open menu">
       ☰
@@ -36,7 +35,7 @@
     <a href="/why-invest.html">Why Invest</a>
     <a href="/faqs.html">FAQs</a>
     <a href="/contact.html">Contact</a>
-    <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn">WhatsApp</a>
+    <a href="https://wa.me/918285051240" class="cta-btn">WhatsApp</a>
   </div>
 </header>
 
@@ -44,5 +43,10 @@
 <script>
 document.querySelector(".hamburger").addEventListener("click", function() {
   document.querySelector(".mobile-menu").classList.toggle("active");
+});
+document.querySelectorAll(".mobile-menu a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.querySelector(".mobile-menu").classList.remove("active");
+  });
 });
 </script>
