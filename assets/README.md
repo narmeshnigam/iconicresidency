@@ -37,7 +37,7 @@ Common files include:
 - lifestyle-concept.jpg
 - location-banner.jpg
 - location-map.jpg
-- logo-iconic.png
+- logo-hirnot.jpg
 - mail.svg
 - map-pin.svg
 - nearby-expressway.jpg
